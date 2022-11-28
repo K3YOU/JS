@@ -8,4 +8,21 @@
 		
 	[정답] 1320
  */
+doll = 10
+spare = 1
+/*
+10 : 1 = 1200 : x
+1200 = 10x
+x = 120
+
+*/
+
+order = 1200
+
+
+produce_spare = order/(doll*spare)  //는 이제 각주야,,
+produce_spare2 = parseInt(produce_spare)
+
+total = order +produce_spare
+console.log(total)
 </script>

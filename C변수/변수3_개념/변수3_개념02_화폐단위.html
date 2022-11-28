@@ -7,6 +7,12 @@
 	[정답]
 		오천원 : 1 , 일천원  : 3 , 오백원  : 1 , 일백원 : 2
  */
+var total = 8700
+var five_t = parseInt(total / 5000)
+var one_t = parseInt(total % 5000/1000)
+var five_h = parseInt(total % 5000%1000/500)
+var one_h = parseInt(total % 5000%1000%500/100)  // 100으로 나누고 몫을 구해야 개수가 나옴
 
+console.log(five_t,one_t,five_h,one_h)
     
 </script>

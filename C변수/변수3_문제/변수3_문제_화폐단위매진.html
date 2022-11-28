@@ -9,4 +9,17 @@
 		 오만원  : 3 , 일만원  : 2 , 오천원 : 0, 
 		 일천원  : 0 , 오백원  : 9 , 일백원 : 4
  */
+
+change = 174900
+ohman = parseInt(change/50000)
+ilman = parseInt(change%50000/10000)
+ohchan = parseInt(change%50000%10000/5000)
+ilchan = 0
+//ilchan = parseInt(change%50000%10000%5000/1000)
+ohbeak = parseInt(change%50000%10000%5000/500)
+
+beak = parseInt(change%50000%10000%5000%500/100)
+
+console.log(ohman,ilman,ohchan,ilchan,ohbeak,beak)
+
 </script>
