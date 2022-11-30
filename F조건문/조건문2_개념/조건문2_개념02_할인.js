@@ -1,0 +1,28 @@
+/*
+	[문제]
+		철수는 볼펜을 (10~30) 개를 구입해야한다. 
+		
+		볼펜하나의 가격은 1200원이다. 	
+		볼펜은 20개이상구매시 볼펜하나당 100원을 할인해주고있다. 
+			
+		볼펜수를 랜덤으로저장한다.
+		철수가 지불해야하는 금액을 출력하시오.				
+*/
+
+let chul = parseInt(Math.random()*21)+10  
+console.log(chul)
+
+let pen = 1200
+
+let dis = -100
+
+let total = pen*chul
+
+if (chul >= 20){
+	pen = 1100
+	total = chul * pen
+	console.log(total)
+}
+else{
+	console.log(total)
+}

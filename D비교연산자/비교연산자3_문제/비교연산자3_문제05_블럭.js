@@ -1,0 +1,17 @@
+
+ /*
+	    [설명]
+		 	철수는 2시간 동안 블럭을 231개 쌓았다. 
+		 	민수는 1시간 반동안 블럭을 177개 쌓았다.
+		 	철수가 민수보다 블럭쌓는속도가 더빠른가요? 
+
+		[문제]
+			위식을 표현하고, 풀이과정을 주석으로 작성하시오.
+	  */
+
+
+let chul_speed =231/120
+let min_speed =177/60
+
+console.log(chul_speed,min_speed)
+console.log(chul_speed>min_speed)

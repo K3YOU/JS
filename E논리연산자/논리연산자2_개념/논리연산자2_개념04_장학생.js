@@ -1,0 +1,19 @@
+
+    
+/*
+	[문제] 
+		국어점수가 100점이거나 수학점수가 100점이면 장학생입니다.
+		아래는 철수의 점수이다.
+		장학생이면 true출력하시오.
+        국어 = 99;
+		수학 = 99;
+		
+		
+		
+ */
+let math = 100
+let kor = 100
+let chul_k = 99
+let chul_m = 99
+
+console.log(chul_k == math || chul_m == math)
