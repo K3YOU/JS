@@ -1,4 +1,4 @@
-<script>
+
 
     	/*	  
 	  	[가운데 숫자 맞추기 게임]	  
@@ -9,4 +9,14 @@
 	  		[출력] ==> 9
 	  	
 	 */
-</script>
+ 
+			let r = parseInt(Math.random()*90000)+10000
+			console.log(r)
+			
+			let 만 = parseInt(r/10000)
+			let 천 =parseInt(r%10000/1000)
+			let 백 = parseInt(r%10000%1000/100)
+			//let 십 = parseInt(r%10000%1000%100/10)
+			//let 일  = parseInt(r%10)
+
+			console.log(백)

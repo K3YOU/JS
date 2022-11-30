@@ -1,4 +1,4 @@
-<script>
+
 /*	  
     if 문의 옵션  (2) else if 		  	  		  	  
     if 만 가지고도 정확한 코드를 짤수있지만,
@@ -37,5 +37,4 @@
     if(select == 1) { console.log("[1.과자]");}
     if(select == 2) { console.log("[2.음료수]");}
     if(select == 3) { console.log("[3.라면]");}
-    if(select < 1 || select > 3) {console.log("[오류2]");}
-</script>
+    //if(select < 1 || select > 3) {console.log("[오류2]");

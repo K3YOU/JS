@@ -1,4 +1,4 @@
-<script>
+
     /*
     [문제]
         철수는 주사위2개를 가지고있다.
@@ -11,6 +11,16 @@
         1 , 1 ==> 2 + 6
     */
 
-    
+        dice1 = parseInt(Math.random()*6)+1
+        console.log("1 :" +dice1)
+        dice2 = parseInt(Math.random()*6)+1
+        console.log("2 :"+dice2)
+        sum = dice1 +dice2
+        console.log(sum)
 
-</script>
+        if (dice1 == dice){
+            sum += 6
+            console.log(sum)
+        }
+
+

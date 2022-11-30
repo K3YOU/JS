@@ -1,4 +1,4 @@
-<script>
+
 /*
 	[연속짝수복권]
 		100~900 사이의 랜덤숫자를 출력한다. 
@@ -16,4 +16,36 @@
 */
 	
 
-</script>
+let r =parseInt(Math.random()*801) +100
+console.log(r)
+
+let one =parseInt(r% 10)
+let ten =parseInt(r%100/10)
+let hun =parseInt(r/100)
+
+let count = 0
+
+//first
+if (one % 2 == 0 && ten % 2 == 0 && hun % 2 ==0  ){
+	count = 3
+}
+//second
+else if (one % 2 == 1 && ten % 2 == 0 && hun % 2 ==0  ){
+	count = 2 }
+else if (one % 2 == 0 && ten % 2 == 0 && hun % 2 ==1  ){
+	count = 2
+}
+//losing ticket
+else {
+	console.log("lot")
+}
+
+
+if (count == 3){
+	console.log("first")
+}
+if (count == 2){
+	console.log("second")
+}
+
+

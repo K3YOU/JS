@@ -1,4 +1,4 @@
-<script>
+
     /*
     while(true) {
         console.log("무한반복중1");
@@ -16,4 +16,3 @@
         System.out.println("무한반복중3");
     }
     */
-</script>

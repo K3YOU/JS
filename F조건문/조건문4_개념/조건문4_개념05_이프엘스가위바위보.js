@@ -1,5 +1,4 @@
-<script>
-    
+
         
     console.log("com : 가위(0),바위(1),보(2) 입력 : ");
     var com = parseInt(Math.random()* 3) ;
@@ -22,4 +21,3 @@
         console.log("me가 졌다.");
     }
     
-</script>

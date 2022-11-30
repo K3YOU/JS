@@ -1,4 +1,4 @@
-<script>
+
 	/*
     [문제]
         숫자 두개를 랜덤으로 저장한다(1~100)
@@ -18,9 +18,8 @@
     if(r2 > r1){
         console.log(r2);
     }
-    else{
+    else{ // 바로 위의 if랑만 짝을 이룬다
         console.log("같다");
     }
 
 
-</script>

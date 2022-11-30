@@ -1,10 +1,10 @@
-<script>
+
     /*	
 		[모두의마블게임] 		
 		 - 철수는 지금 모두의마블게임을 하고있다.
 		 - 게임은 0 ~ 20까지 이동할수있는거리가있다.
-		 - 지금 철수의 차례이고 , 
-		 - 현재의 위치는 시작점으로부터  9 만큼 이동했다.		 
+		 - 지금 철수의 차례이고 ,  
+		 - 현재의 위치는 시작점으로부터  9 만큼 이동했다.		  //9
 		 - 1 ~ 6의 눈금이 있는 주사위 2개를 던진다.
 		 - 주사위 숫자의  합만큼 이동한다. 
 		 - 다음 이동할 철수의 위치를 출력하시오.
@@ -24,4 +24,47 @@
 	
 		 [4] 20 이상의 값이 나오면 "승리" 를 출력한다.
 	 */
-</script>
+
+		let dice1 =parseInt(Math.random()*6)+1
+		let dice2 =parseInt(Math.random()*6)+1
+		console.log("주사위 던진다 ",dice1,dice2)
+
+		let cur = 9
+		let move = 0
+
+		//dice != dice
+		if (dice1 != dice2){
+			move = cur +dice1+dice2	
+			console.log("move ",move)
+		}
+		//dice == dice
+		else {
+			move = cur + dice1+dice2+6
+			console.log("move ",move)
+
+		}
+		//move =14,15,16
+		  // sum <= 6 ->0 ->패널티
+		  // sum >= 7 ->같은자리-> 패널티없음
+		if (move == 14 || move == 15|| move == 16){
+			
+			let dice3 =parseInt(Math.random()*6)+1
+			let dice4 =parseInt(Math.random()*6)+1
+			console.log("move>=14 agian",dice3,dice4)
+			sum = dice3+dice4
+			console.log("sum",sum )
+
+			if (sum<= 6){
+				move = 0
+				console.log("penalty")
+			} 
+			if (sum>= 7){
+				console.log("no penalty")
+			}
+
+		}
+		 
+		//move =20
+		if (move >= 20){
+			console.log("승리 ",move)
+		}

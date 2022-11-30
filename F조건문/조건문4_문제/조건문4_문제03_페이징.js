@@ -1,4 +1,4 @@
-<script>
+
 		/*
 		   1~1000 사이의 숫자를 랜덤받고 다음과 같이 출력하시오.
 		   입력받은값이 
@@ -13,5 +13,16 @@
 		   	10 ==> 1
         
 		 */
+let r =parseInt(Math.random()*1000)+1
+console.log(r)
 
-</script>
+//let unit = parseInt(r/ 10)*10 +1
+//console.log(unit)
+
+
+let unit1 = parseInt(r/ 10) // 10 -> 1 , 11 ->1
+
+if( r % 10 == 0){ // r: 10
+	unit1 -= 10   // unit1 = 0
+} 
+console.log(unit1+"1") // "1", 1"1"

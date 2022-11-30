@@ -1,4 +1,3 @@
-<script>
 /*
 	[문제]
 		철수는 볼펜을 (10~30) 개를 구입해야한다. 
@@ -19,5 +18,45 @@
 		
 */
 
+let chul = parseInt(Math.random()*21)+10
+console.log("볼펜수" +chul)
 
-</script>
+let pen = 1200
+let dis = 100  //20개 이상
+let level = parseInt(Math.random()*3)+1 
+console.log("회원등급" + level)
+
+let price = 0 // 지불 금액
+
+if (chul >= 20){
+	price = (pen-dis)*chul
+	if (level == 1){
+		price =price -(price * 15/100)
+		console.log(price)
+	}
+	if(level == 2){
+		price =price -(price * 10/100)
+		console.log(price)
+
+	}
+	if (level ==3){ // 여기는 안 적어도 된다
+		price = (pen-dis)*chul
+		console.log(price)
+	}
+}
+else {
+	price = (pen)*chul
+	if (level == 1){
+		price =price -(price * 15/100)
+		console.log(price)
+	}
+	if(level == 2){
+		price =price -(price * 10/100)
+		console.log(price)
+
+	}
+	if (level ==3){ // 여기는 안 적어도 된다
+		price = (pen)*chul
+		console.log(price)
+	}
+}

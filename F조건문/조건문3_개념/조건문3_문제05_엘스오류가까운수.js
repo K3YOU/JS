@@ -1,4 +1,4 @@
-<script>
+
     /*
 		[문제]		
     a 는 랜덤으로 1~99를 랜던저장한다.
@@ -24,10 +24,10 @@
     if(r2 > r1){
       console.log("a가 가깝다");
     }
-    else{
+    else{  // 바로 위의 if랑만 짝을 이룬다
       console.log("같다");
     }
     
 
 
-</script>
+

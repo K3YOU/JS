@@ -1,4 +1,4 @@
-<script>
+
     	/*
 		 * 	스위치 케이스 (switch case)
 		 *  사용예 : 비교대상이 전부 ==(같다) 일때만 사용가능하다.
@@ -33,4 +33,3 @@
             console.log("a 는 3이다");
 			break;
 		}		
-</script>

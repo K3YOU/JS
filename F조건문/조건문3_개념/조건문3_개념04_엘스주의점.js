@@ -1,4 +1,3 @@
-<script>
     /*
 	  	[else 사용시 조심할점.]		  			  			  	
 	  	else 는  바로 위의 if 와 연결되기 때문에 
@@ -23,4 +22,3 @@
 	if(select == 2) { System.out.println("2.음료수");}
 	if(select == 3) { System.out.println("3.라면");}
 	else {System.out.println("[오류]");} // select가 3이아니면
-</script>
