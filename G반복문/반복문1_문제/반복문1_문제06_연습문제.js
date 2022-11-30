@@ -1,4 +1,4 @@
-<script>
+
 /*
 	[문제]
 		[1] 1~15를 출력한다.
@@ -6,4 +6,15 @@
 		[3] 그외는 전부 숫자를 출력한다. 
 		
  */
-</script>
+
+		let i = 1
+		while (i <= 15){
+			if (5<i<10 && i % 3 == 0){
+				console.log("hi")
+			}
+			else{
+				console.log(i)
+
+			}
+			i += 1
+		}

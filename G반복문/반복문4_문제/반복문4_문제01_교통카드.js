@@ -1,4 +1,4 @@
-<script>
+
     /*
 	    [문제]
 	    
@@ -11,4 +11,20 @@
 	     교통카드를 사용한 학생수와 현금을 사용한 학생수는 
 	     각각 얼마인가?
  */
-</script>
+let student = 25
+let total = 19400
+let card = 720
+let cash = 1000
+
+let x = 0 // card
+let y = 25 // cash
+
+let run = 1
+while (run == 1){
+	if (x+y == 25 && card*x +cash*y == total){
+		console.log(x,y)
+	}
+	x += 1
+	y -= 1
+}
+
