@@ -1,4 +1,4 @@
-<script>
+
 
 	/*
 		[문제]
@@ -9,4 +9,10 @@
 	        
 	 */
 	 var array = [10, 543, 52, 24, 67];
-</script>
+	var r =parseInt(Math.random()*5)
+	console.log("r",r)
+	for (i=0;i<array.length;i++){
+		if (i == r){
+			console.log(array[i])
+		}
+	}

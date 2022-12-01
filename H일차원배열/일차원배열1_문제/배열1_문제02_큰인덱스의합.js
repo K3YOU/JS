@@ -1,4 +1,4 @@
-<script>
+
 
 	/*
 	 	index 에 숫자를 한개를 입력받고 arr 
@@ -10,4 +10,14 @@
 	 	결과) 120
 	*/
 	var array = [10,20,30,40,50];
-</script>
+	var sum = 0
+
+	var index = parseInt(Math.random()*5)
+	console.log("index", index)
+
+	for(var i = 0;i<array.length;i++){
+		if(array[i]>array[index]){
+			sum += array[i]
+		}
+	}
+	console.log(sum)

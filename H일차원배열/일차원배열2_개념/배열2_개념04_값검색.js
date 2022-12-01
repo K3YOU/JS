@@ -1,4 +1,3 @@
-<script>
 
 	/*
 		[문제]
@@ -11,4 +10,9 @@
 	 */
 	 var array = [10, 543, 52, 24, 67];
     var val = 67;
-</script>
+
+	for(var i=0;i<array.length;i++){
+		if(val == array[i]){
+			console.log(i)
+		}
+	}

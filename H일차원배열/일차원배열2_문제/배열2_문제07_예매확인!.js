@@ -1,4 +1,4 @@
-<script>
+
     /*
         [예매확인]
         [1] seatList 는 영화관 7자리를 나타낸다. 
@@ -15,4 +15,12 @@
         var seatList = [1003,1003,0,0,1002,0,1005];		
 		var find1 = 1003;
         var find2 = 1001;
-</script>
+
+        for(i=0;i<seatList.length;i++){
+            if (find1 == seatList[i]||find2 == seatList[i]){
+                console.log(i)
+            }
+            else if (find1 != seatList[i]||find2 != seatList[i]) {
+                console.log("none")
+            }
+        }

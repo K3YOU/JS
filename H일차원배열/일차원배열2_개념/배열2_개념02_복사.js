@@ -1,4 +1,4 @@
-<script>
+
     
 /*
 		[문제1] 		
@@ -21,5 +21,3 @@
     console.log(temp1);
     console.log(temp2);
 
-
-</script>

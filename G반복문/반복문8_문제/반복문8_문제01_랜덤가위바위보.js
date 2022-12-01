@@ -1,4 +1,4 @@
-<script>
+
 	/* 
 	 	랜덤가위바위보	 	
 	 	철수와 민수는 계단에서 가위바위보를 한다. 	 	
@@ -12,4 +12,28 @@
 		 do while 사용
 	 */
 
-</script>
+var i = 1 // 횟수
+var cur_c = 50
+var cur_m = 50
+ 
+
+do{
+	var chul = parseInt(Math.random()*3)
+	var min = parseInt(Math.random()*3)
+	console.log("chul :",chul,"min :", min)
+
+	//chul win 
+	if (chul== 0 && min == 2){
+		cur_c += 5
+		cur_m -= 3
+	}
+
+	//min win
+
+
+	//tie 
+
+
+	//min win
+	
+}while(i<=5);

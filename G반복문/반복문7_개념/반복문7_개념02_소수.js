@@ -1,4 +1,3 @@
-<script>
     	/*
 	 * 	[소수찾기]
 	 * 
@@ -12,4 +11,19 @@
 	 * (4) 6/1 6/2 6/3 6/4 6/5 6/6	==> count=4	==> (소수x)
 	 * (4) 2/1 2/2 	==> count=2	==>(소수)
 	 */
-</script>
+
+	
+r = parseInt(Math.random()*100)
+console.log(r)
+let count = 0
+for (i=1;i<=r;i++){
+	if (r % i == 0){
+		count += 1
+
+	}	
+	
+}
+
+if (count == 2){
+	console.log("prime num")
+}

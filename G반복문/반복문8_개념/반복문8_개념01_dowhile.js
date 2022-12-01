@@ -1,4 +1,4 @@
-<script>
+
     /*
 		[do while] 
 		
@@ -16,4 +16,3 @@
 			console.log(i);
 			i += 1;
 		}while(i < 6);
-</script>

@@ -1,4 +1,4 @@
-<script>
+
 	/*
 	 *  [369게임]
 	 * 1. 1~50까지 반복을 한다.
@@ -18,5 +18,37 @@
 		 * 
 		 */
 		
+
+
+	for (i=1;i<=50;i++){
+		let ten = parseInt(i/10)
+		let one = parseInt(i%10)
+		let count = 0	
+		
+		if (ten == 3 || ten == 6 || ten == 9){
+			count += 1
+			if (one == 3 || one == 6 || one == 9){
+				count += 1
+			}
+
+		}	
+		else {
+			if (one == 3 || one == 6 || one == 9){
+				count += 1
+			}
+		}
+
+		if (count == 2){
+			console.log("clap twice")
+		}
+		else if (count == 1){
+			console.log("clap")
+		}
+		else if (count == 0) {
+			console.log(i)
+		}
+		
+
+	 }
         
-</script>
+

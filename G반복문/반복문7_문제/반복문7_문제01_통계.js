@@ -1,4 +1,4 @@
-<script>
+
     	/*
 	 * [랜덤점수통계]
 	 * 
@@ -9,4 +9,39 @@
 	 * 5. 전교생(10명)의 총점과 평균을 출력한다.
 	   6. 1등의 번호와 점수를 출력한다.
 	 */
-</script>
+
+	   let sum = 0
+	   let first = 0 //1등의 점수
+	   let first_index = 0   // 1등의 번호
+
+
+	   for(i=1;i<=10;i++){  //i : student num
+			score =parseInt(Math.random()*100)+1  
+
+			if (score>= 60){
+				sum += score
+				console.log(i, "pass")
+				if (score >first){
+					first_index = i
+					first = score
+
+				}
+			}
+			else{
+				sum += score
+				console.log(i, "non pass")
+				if (score >first){
+					first_index = i
+
+					first = score
+				}
+			}
+
+			
+			
+
+
+	   }
+	   console.log("first :",first_index,first)
+	   console.log("sum:",sum)
+	   console.log("avg :",sum/10)

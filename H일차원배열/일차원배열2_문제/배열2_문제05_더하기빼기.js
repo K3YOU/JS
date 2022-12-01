@@ -1,4 +1,4 @@
-<script>
+
 	/*
 		[문제1] 
 		
@@ -12,8 +12,14 @@
 
   
 	 */
-	 var array1 = [10,20,30,40,50];
-		var array2 = [5,8,54,32,1];
-		var temp1 =[];
-		var temp2 = [];
-</script>
+	var array1 = [10,20,30,40,50];
+	var array2 = [5,8,54,32,1];
+	var temp1 =[];
+	var temp2 = []
+
+	for (i=0;i<array1.length;i++){
+		temp1[i]=array1[i]+array2[i]
+		temp2[i]=array1[i]-array2[i]
+	
+	}
+	console.log(temp1,temp2)

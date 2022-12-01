@@ -1,4 +1,4 @@
-<script>
+
     	/*  
 	  [문제]
 		   철수는 자전거로 운동장한바퀴도는데 70초 , 
@@ -8,4 +8,11 @@
 		   단, 30분동안 항상일정한 속도를 유지한다. 
 	 
 	 */
-</script>
+
+let count = 0
+for (time=30*60; time >=0; time--){
+	if(time % 70 == 0 && time % 90 == 0){
+		count +=1
+	}
+}
+console.log(count)

@@ -16,15 +16,18 @@
 			}
 
 
+			// true 랑 flase로 멈추기
+			
+			i = 50 //let 두 번 못 쓴다! , 첫 값은 따로 빼주기
+			count = 0 
 
 			for (run =true; run == true;){
-				let i = 50
 				if  (i <= 550){
 					if (i % 7 == 0){
 						count += 1
 						if (count == 3){
 							console.log(i)
-							false
+							run =false
 						}
 					}
 				}

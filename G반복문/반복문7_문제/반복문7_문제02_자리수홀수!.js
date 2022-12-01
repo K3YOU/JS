@@ -1,4 +1,4 @@
-<script>
+
     	/* 
 	 	[자리별홀수개수]
 		  1 ~ 10000 사이의 숫자를 입력받고 
@@ -11,4 +11,7 @@
 		  	 9999 ==> 4개
 	 
 	 */
-</script>
+let r =parseInt(Math.random()*10001)
+console.log(r)
+
+let s0 = 

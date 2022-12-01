@@ -1,6 +1,6 @@
-<script>
+
     	/*
-   
+
 
 	 	index(0~4) 에 숫자를 랜덤으로 저장하고 
           배열에서 index 보다 큰인덱스의 값들만 출력 
@@ -10,4 +10,12 @@
 	 	결과) 50
 	*/
 	var array = [10,20,30,40,50];
-</script>
+
+	var index = parseInt(Math.random()*5)
+	console.log("index", index)
+
+	for(var i = 0;i<array.length;i++){
+		if(array[i]>array[index]){
+			console.log(array[i])
+		}
+	}

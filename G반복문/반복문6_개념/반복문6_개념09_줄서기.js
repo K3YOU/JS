@@ -1,4 +1,4 @@
-<script>
+
     	/*  
 	  [문제]
 		   a중학교 1학년 입학하는 학생들은 8줄 12줄 18줄로 세워도
@@ -7,4 +7,9 @@
 		   (학생수는 200명이상 250명미만)
 	 
 	 */
-</script>
+
+		   for (total =200;total<=250;total++){
+			if(total % 8 == 5 && total % 12 ==5 && total % 18 == 5 ){
+				console.log(total)
+			}
+		   }
