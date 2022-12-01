@@ -1,4 +1,4 @@
-<script>
+
     	/*
 	     [문제1] 1~10까지 반복해 5~9 출력
 		 [정답1] 5, 6, 7, 8, 9
@@ -14,4 +14,26 @@
 		 
 			  for를 사용하시오.
 	 */
-</script>
+
+			console.log("ex.1") // 초기식, 조건식,증감식         
+/*
+i ++ : 후위연산자 : 작업 ->증가
+++ i : 전위연산자 : 증가 -> 작업
+*/ 
+for (i =1;i<=10;i++){
+	if (i>=5 && i<=9){
+		console.log(i)
+	}
+}
+		
+			
+			console.log("ex.2")
+			for (i=10; i>= 1; i --){
+				if (6>= i && i >=3){
+					console.log(i)
+				}
+			}
+
+
+			console.log("ex.3")
+			console.log("ex.4")

@@ -1,4 +1,4 @@
-<script>
+
     		var n = 0;
 		for(var run = 1; run == 1;) {
 			console.log(n);
@@ -17,4 +17,3 @@
 			}
 			n += 1;
 		}
-</script>

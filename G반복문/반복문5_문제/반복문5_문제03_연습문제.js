@@ -1,5 +1,5 @@
-<script>
-    	/* 
+
+/* 
 		 [문제1] 1~10까지 중에서 3미만 7이상의 합을 출력하시오.
 		       1 + 2 + 7 + 8 + 9 + 10
 		 [정답1] 37
@@ -10,4 +10,18 @@
 		 
 		 	for를 사용하시오.
 	*/
-</script>
+	let sum = 0
+	for (i = 1;i<=10;i++){
+		if (i<3 || i>=7){
+			sum += i
+		}
+	}
+	console.log("sum",sum)
+
+	let count = 0
+	for (i = 1;i<=10;i++){
+		if (i<3 || i>=7){
+			count += 1
+		}
+	}
+	console.log(count)

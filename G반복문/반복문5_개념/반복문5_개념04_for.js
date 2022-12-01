@@ -1,4 +1,3 @@
-<script>
     	/*
 	 * [반복문 for]
 	 * 1. 반복문의 조건 3가지
@@ -15,5 +14,3 @@
      for (var y = 1;y <= 5; y++) { 
 			console.log(y);
 		}
-
-</script>

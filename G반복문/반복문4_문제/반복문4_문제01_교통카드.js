@@ -23,6 +23,7 @@ let run = 1
 while (run == 1){
 	if (x+y == 25 && card*x +cash*y == total){
 		console.log(x,y)
+		run = 0
 	}
 	x += 1
 	y -= 1

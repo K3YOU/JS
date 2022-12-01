@@ -1,4 +1,4 @@
-<script>
+
     /*
 	 * [문제]
 		  아래와같은 휴대요금제가 있다 
@@ -9,4 +9,29 @@
 		  B요금제 기본요금 31000원 초당 2원
 	  
 	 */
-</script>
+
+		
+		let a_per_sec = 5
+		let b_per_sec = 2
+
+		let a = 17500
+		let b = 31000
+
+		let time = 0
+
+		while (true){
+			if (a +a_per_sec*time > b + b_per_sec*time){
+				console.log(time+'sec')
+				flase
+			}
+			time += 1
+		}
+
+		/*
+		17500 + 5x > 31000 + 2x
+		3x > 13500
+		x > 4500 
+
+
+
+		*/

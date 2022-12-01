@@ -1,4 +1,3 @@
-<script>
 
 /*
 	 * [보조제어문 2종류] 
@@ -21,11 +20,11 @@
             if(sel == 0){
                 break;
             }
-			if (sel != 1 && sel != 2 && sel != 3) {
+			if (sel != 1 && sel != 2 && sel != 3) { ///  4부터는 잘못된 입력입니다로 출력하고 싶은 경우 컨티뉴
 				console.log("잘못된 입력입니다.");
 				continue;
 			}
-			
+			// 1,2,3일 때 경우의 수는 그대로 써주고
 			if (sel == 1) {
 				console.log("햄버거");
 			} else if (sel == 2) {
@@ -34,5 +33,3 @@
 				console.log("감자");
 			}
 		}
-
-</script>
