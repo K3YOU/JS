@@ -10,7 +10,7 @@
 	for (i=0;i<numberList.length;i++){
 		r =parseInt(Math.random()*100)+1
 		scoreList[i]=r
-		console.log("student number :", numberList[i], "score :", scoreList[i])
+		console.log("student number :", numberList[i], ", score :", scoreList[i])
 	}
 
 	

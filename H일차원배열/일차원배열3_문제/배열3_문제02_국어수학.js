@@ -1,4 +1,4 @@
-<script>
+
 	/*
 		[학생검색]
 			아래배열들은 3명의 학생데이터이다.
@@ -17,6 +17,13 @@
 			var mathList = [30,    23,   1];
 	 */
 		
-		
+			var numList = [1001 , 1002, 1003];
+			var korList = [20,    43,   45];
+			var mathList = [30,    23,   1];
 
-</script>
+			for(i=0;i<numList.length;i++){
+				if(korList[i]>mathList[i]){
+					console.log(numList[i])
+				}
+			
+			}

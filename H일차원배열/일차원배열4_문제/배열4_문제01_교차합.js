@@ -1,4 +1,4 @@
-<script>
+
 
     	/*
 	    [교차합]
@@ -18,7 +18,13 @@
 		int b[] = new int[5];
 	 */
 
-	 var arr1 = [11,21,31,41,51];
-		var arr2 = [25,26,27,28,29];
-		var b = [];
-</script>
+	var arr1 = [11,21,31,41,51];
+	var arr2 = [25,26,27,28,29];
+	var b = [];
+
+	for (i=0;i<arr1.length;i++){
+		b[i]=arr1[i]+arr2[(arr1.length-1)-i]   // arr1.length 는 배열 수 보다 하나 큰 값이므로 -1을 해줘야한다.
+		console.log(b[i])
+
+	}
+	console.log(b)

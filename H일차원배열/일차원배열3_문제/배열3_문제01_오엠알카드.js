@@ -1,4 +1,4 @@
-<script>
+
 
 	/*
 	  [OMR카드]
@@ -12,9 +12,30 @@
 	   
 	[예]
 	 test  = [1, 3, 4, 2, 5];
-	 student = [1, 1, 4, 4, 3];
+	 student = [1, 1, 4, 4, 3];  // 랜덤숫자 5개
 	 result  = [true, false, true, false, false];
 	 score = 40;
 	*/
 
-</script>
+	test  = [1, 3, 4, 2, 5];
+	console.log(test)
+	student = [];  // 랜덤숫자 5개
+	result  = [];
+	score = 0
+
+	for(i=0;i<test.length; i ++){
+		r = parseInt(Math.random()*5)+1
+		student[i] =r
+		if (test[i]== student[i]){
+			result[i] = "true"
+			score += 20
+		}
+		else {
+			result[i] = "false"
+			score -= 20
+		}
+	}
+	console.log(student)
+	console.log(result)
+	console.log(score)
+

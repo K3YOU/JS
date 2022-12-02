@@ -1,8 +1,23 @@
-<script>
+
 	/*
 	  [문제] a 배열안에 1 또는 7만 랜덤으로 7개 저장후 출력. 
 	  [예] 1,7,7,1,1,7,7
 	 */
 
 	var array = [];
-</script>
+
+
+	for (i=0;i<7; i++){
+		var r = parseInt(Math.random()*2)
+		console.log(r)
+		
+		if( r == 0){
+			r = 7
+			array[i]=r
+		}
+		else {
+			array[i]=r
+
+		}
+	}
+	console.log(array)

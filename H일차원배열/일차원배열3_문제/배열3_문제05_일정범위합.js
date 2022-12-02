@@ -1,4 +1,3 @@
-<script>
 	/*
 	  [문제]
 	  		array[] = {10, 43, 25, 76, 3, 100, 56};	      
@@ -17,8 +16,52 @@
       
       
 	 */	
-	var array = [10, 43, 25, 76, 3, 100, 56];		
-	var index1 = -1;
-	var index2 = -1;
+	var array = [10, 43, 25, 76, 3, 100, 56];
 
-</script>
+	var r1 = parseInt(Math.random() * array.length);
+	var r2 = parseInt(Math.random() * array.length);
+	if (r1 > r2){
+		var temp = r1;
+		r1 = r2;
+		r2 = temp;
+	}
+	console.log(r1 , r2)
+	total = 0;
+	for(var i = r1; i <= r2; i++){
+		total += array[i];
+		console.log("사이값 : " , array[i]);
+	}
+	console.log("합 : " , total);
+
+
+	// // index1 > index2   
+
+
+	//for (i=0; i<array.length;i++){
+
+	// // index1 <index2
+	// 	if (i == index1 &&index2>index1){
+	// 		sum += array[index1]
+	// 		if (i ==index2){
+	// 			break
+	// 		}
+
+	// 	}
+	
+	// // index1 > index2   -> index1 and index2 switch
+	// 	else if (i == index2 && index1 >index2){
+	// 		temp = index1
+	// 		index1 = index2
+	// 		index2 = temp
+
+	// 		sum += array[index1]
+	// 		if (i ==index2){
+	// 			break
+	// 		}
+
+	// 	}
+	// 	else if (i ==index1 && index1 == index2) {
+	// 		sum += array[index1]
+	// 	}
+	// }
+	// console.log(sum)

@@ -1,4 +1,3 @@
-<script>
 
 /*
 		[셔플] 	
@@ -12,4 +11,9 @@
 
 	var arr = [10,20,30,40,50,60];
 
-</script>
+for (i=0;i<10;i++){
+	r=parseInt(Math.random()*6)
+	console.log(r)
+	
+
+}

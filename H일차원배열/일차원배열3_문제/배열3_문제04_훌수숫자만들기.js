@@ -1,4 +1,4 @@
-<script>
+
 	/*
 		[문제]
 			아래배열에 랜덤으로 0~9사이의 숫자를 각각 저장한다. 
@@ -12,4 +12,16 @@
 			
 	 */  
 	var arr = [];
-</script>
+	var str = " "   //문자열로 인식하게 해줌
+
+	for (i=0;i<5;i++){
+		r =parseInt(Math.random()*10)
+		arr[i] = r
+		if(r % 2 == 1){
+			str += r // +=를 해줘야함
+		}
+	}
+	console.log(str)
+
+	console.log(arr)
+	

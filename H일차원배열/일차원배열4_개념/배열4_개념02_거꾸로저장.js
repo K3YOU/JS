@@ -1,4 +1,3 @@
-<script>
 	/*
 
 	  [문제] a 배열의 값을 b 배열에 하나씩 저장하는데 순서를 거꾸로 저장 
@@ -7,4 +6,9 @@
 
 	var a = [10,20,30,40,50];
 	var b = [];
-</script>
+
+for (i=0; i<a.length; i ++){
+	b[i] = a[4-i]
+	
+}
+console.log(b)

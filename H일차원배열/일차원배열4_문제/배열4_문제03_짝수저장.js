@@ -1,4 +1,3 @@
-<script>
 /*
     [문제1] 아래조건을 모두 만족시키시오.
         [조건1] 아래 배열 a 와 b 를 비교해서 둘의 합을 c에 저장한다.
@@ -13,6 +12,20 @@
 
         var a = [ 10, 20, 30, 40, 50 ];
         var b = [ 13, 54, 17, 42, 1 ];
-        var c = [ 0,0,0,0,0];
-        var d = [ 0,0,0,0,0];
-</script>
+        var c = [ 0,0,0,0,0]; // 합
+        var d = [ 0,0,0,0,0]; // 합의 짝수만
+
+        for (i=0;i<a.length;i++){
+                c[i] =a[i]+b[i]
+        }
+        console.log(c)
+
+        let count = 0
+
+        for(i=0;i<c.length;i++){
+                if(c[i]%2 ==0){
+                        d[count]=c[i]
+                        count +=1
+                }
+        }
+        console.log(d)
