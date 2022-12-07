@@ -1,4 +1,4 @@
-<script>
+
 
 	/*
 		랜덤으로 인덱스를 입력받고 해당 인덱스의 값과  0으로 변경
@@ -11,4 +11,10 @@
 			
 	 */
 	 var arr = [9,9,9,9,9];
-</script>
+	
+	 r=parseInt(Math.random()*4)+1
+	 console.log(r)
+
+	if(r == 0 || r == 4){
+		
+	}

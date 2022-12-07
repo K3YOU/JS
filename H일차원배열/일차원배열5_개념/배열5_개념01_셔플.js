@@ -10,10 +10,21 @@
 	*/
 
 	var arr = [10,20,30,40,50,60];
+	var temp =0
 
 for (i=0;i<10;i++){
 	r=parseInt(Math.random()*6)
-	console.log(r)
+	r1=parseInt(Math.random()*6)
 	
+	console.log(r,r1)
+
+	temp = arr[r]
+	arr[r] =arr[r1]
+	arr[r1] = temp
+
+	if(r== r1){
+		arr[r] = arr[r1]
+	}
 
 }
+console.log(arr)
