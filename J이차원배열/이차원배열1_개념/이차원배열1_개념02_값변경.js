@@ -1,4 +1,4 @@
-<script>
+
     /*
     */
 
@@ -16,4 +16,3 @@
     arr[2][1] = 80;
     arr[2][2] = 90;
     console.log(arr);
-</script>

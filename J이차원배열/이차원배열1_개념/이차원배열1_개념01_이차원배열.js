@@ -1,4 +1,3 @@
-<script>
     var arr = [
         [0,0,0],
         [0,0,0],
@@ -15,4 +14,3 @@
     var arr3 =[[],[],[]];
     console.log(arr3);
     
-</script>

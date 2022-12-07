@@ -1,4 +1,4 @@
-<script>
+
 	/*
 	  	[문제] 
 		  	a 배열과  b배열을 서로 비교해서 
@@ -12,19 +12,38 @@
 	var b = [10,5,20,9];
 	var c = [];
 	var ci = 0;
+	//var check = false
+
+	// for(i =0;i<a.length;i++){
+	// 	var check = false
+	// 	for(j=0;j<b.length;j++){
+	// 		if(a[i]==b[j]){
+	// 			check = true;
+	// 		}
+	// 		if(check==false){
+	// 			c[ci] = a[i]
+	// 			ci += 1
+	// 		}
+	// 	}
+	// }
+	// console.log(c)
+
+
+
+
 	for(var i = 0; i < a.length; i++){
 		var check = false;
 		for(var j = 0; j < b.length; j++){
 			if(a[i] == b[j]){
 				check = true;
-			}
+		
 		}
-		if(check == false){
+		if(check==false){
 			c[ci] = a[i];
 			ci += 1;
 		}
 	}
+}
 	console.log(c);
 
 
-</script>

@@ -1,4 +1,4 @@
-<script>
+
 	/*
 	  [정렬]
 	  
@@ -18,7 +18,7 @@
 	var arr = [10,50,30,40,80,19];
 	for(var i = 0; i <  arr.length; i++){
 		var index = i;
-		var max = arr[i];
+		var max = arr[i]; //10
 		for(var j = i + 1; j < arr.length ; j++){
 			if(arr[j] > max){
 				max = arr[j];
@@ -32,4 +32,3 @@
 	console.log(arr);
 	
 
-</script>

@@ -1,4 +1,4 @@
-<script>
+
 /*
 	철수는 학교에서 산수시험을 봤다. 
 	a배열의 숫자와 b배열의 숫자의 각각의 값의 합을 구하는 시험이다.
@@ -27,10 +27,11 @@
 
 	var sum = [];
 
+	//a와 b의 합을 구한다음 철수꺼랑 비교
 	for(var i = 0; i < a.length; i++){
 		sum[i] = a[i] + b[i];
 	}
-	var count = 0;
+	var count = 0; // 정답 몇 개 맞췄는지 
 	for(var i = 0; i < 철수.length; i++){
 		for(var j = 0; j < sum.length; j++){
 			if(sum[i] == 철수[j]){
@@ -39,9 +40,8 @@
 			}
 		}
 	}
-	console.log("개수 : " + count);
+	console.log( count+"개를 맞췄다");
 
 
 
 
-</script>
