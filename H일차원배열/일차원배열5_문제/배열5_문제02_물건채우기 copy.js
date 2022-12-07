@@ -21,28 +21,30 @@
 	 */
 
 
-		var 라면진열장 = [3,5,2,1,2];	
-		var 재고 = 6;
+		var ramen = [3,5,2,1,2];	
+		var last = 6;
 
-		index = 0; // 라면진열장 배열에 들어갈 배열 카운트하는 거
-		while (true){
-			console.log("재고 : "  , 재고);
-			console.log(라면진열장 );
+		var index = 0
 
-			// 멈추는 경우 : 재고가 다 떨어진 경우, 배열이 끝까지 다 간 경우
-			if (재고 == 0){ 
-				break;
+		
+		while(true) {
+		//for(i=0;i<ramen.length;i++)// for문으로 쓰면 라멘 배열의 길이만큼만 세고 카운트를 중간에 멈춘다.
+			console.log("ramen's array :",ramen)
+			console.log("index :", index)
+
+			if(last == 0){  // 재고가 다 떨어진 경우
+				break
 			}
-			if (index == 5){
-				break;
+			if (index == 5){  //인덱스가 다 찬 경우
+				break
 			}
 
-			if (라면진열장[index] < 5){ // 5를 다 못 채웠을 때
-				라면진열장[index] += 1; 
-				재고 -= 1; 
+			if(ramen[index]<5){ 
+				ramen[index] +=1
+				last -= 1
 			}
-			if(라면진열장[index] == 5){ // 5를 다 채웠을 때
-				index += 1; // 다음 인덱스로 넘어가기!
+			if (ramen[index]==5){
+				index ++
 			}
 		}
-		
+		console.log(ramen)

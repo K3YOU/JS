@@ -1,4 +1,4 @@
-<script>
+
 	/*
 		[학생검색]
         아래배열은 3명의 학생데이터이다.
@@ -19,5 +19,15 @@
 	 */
     var arr = [1001, 20, 30, 1002, 43, 23, 1003, 45, 1];
 	var b =[];
+    var index = 0
 
-</script>
+    for(i=0;i<arr.length;i+=3){
+        if(arr[i+1]>arr[i+2]){
+            b[index] =arr[i]
+            index += 1
+        }
+        
+    }
+    console.log(b)
+
+

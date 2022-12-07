@@ -10,11 +10,26 @@
 		(예) 4 ==> [9,9,9,0,0]
 			
 	 */
-	 var arr = [9,9,9,9,9];
+	 var arr = [9,9,9,9,9,9,9,9,9];
 	
-	 r=parseInt(Math.random()*4)+1
+	 r = parseInt(Math.random()*arr.length)
 	 console.log(r)
+	
+	 var index = 0
 
-	if(r == 0 || r == 4){
-		
-	}
+	 //(r=0;r<arr.length;r ++){
+		if(r >= 1  && r <= arr.length-2){
+			arr[r-1] = 0
+			arr[r] = 0
+			arr[r+1] = 0 
+		}
+		if (r== 0 ){
+			arr[r] = 0
+			arr[r+1] = 0  
+		}
+		if (r== arr.length-1 ){
+			arr[r-1] = 0
+			arr[r] = 0
+		}
+	 //}
+	 console.log(arr)
