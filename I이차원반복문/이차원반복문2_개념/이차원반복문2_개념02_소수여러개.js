@@ -1,4 +1,4 @@
-<script>
+
 /*
     [소수여러개찾기]
     정수 한 개를 랜덤(2~100) 2부터 해당 숫자까지의 모든 소수 출력
@@ -8,18 +8,38 @@
 
    
 */
-    var ran = parseInt(Math.random() * 99) + 2;
-    console.log("랜덤숫자 " + ran);
-    for(var i = 2; i <= ran; i++){
-        var count = 0;
-        for(var j = 1; j <= i; j++){
-            if(i % j == 0){
-                count += 1;
+
+var ran = parseInt(Math.random()*99)+2
+console.log("random number :", ran)
+
+for (var i = 2; i<=ran; i++){
+    var count = 0
+    for (var j = 1; j<= i; j++){
+        if(i %j == 0){
+            count ++
             }
+ 
         }
-        if(count == 2){
-            console.log(i);
+    if (count == 2){
+            console.log(i)
         }
+
     }
 
-</script>
+
+
+
+// var ran = parseInt(Math.random() * 99) + 2;
+//     console.log("랜덤숫자 " + ran);
+//     for(var i = 2; i <= ran; i++){
+//         var count = 0;
+//         for(var j = 1; j <= i; j++){
+//             if(i % j == 0){
+//                 count += 1;
+//             }
+//         }
+//         if(count == 2){
+//             console.log(i);
+//         }
+//     }
+

@@ -1,4 +1,4 @@
-<script>
+
 	/*
 	 input 의 배열안의 값들이   array배열의 값들과 일치하고,
 	  그순서도 일치하면  true , 아니면 false 출력 	
@@ -20,4 +20,33 @@
 	var input1 = [6,1,8];
 	var input2 = [6,3];
 
-</script>
+	var check = false;
+	var len = input1.length;
+	for(var i = 0; i < array.length - len + 1; i++){
+		var c = 0;
+		for(var j = 0; j < input1.length; j++){
+			if (array[i + j] == input1[j]){
+				c += 1;
+			}
+		}
+		if (c == input1.length){		
+			check = true;	
+		}
+	}
+	console.log(check)
+
+	console.log("--------------------------------------------")
+	var check = false;
+	var len = input1.length;
+	for(var i = 0; i < array.length - len + 1; i++){
+		var c = 0;
+		for(var j = 0; j < input2.length; j++){
+			if (array[i + j] == input2[j]){
+				c += 1;
+			}
+		}
+		if (c == input2.length){		
+			check = true;	
+		}
+	}
+	console.log(check)

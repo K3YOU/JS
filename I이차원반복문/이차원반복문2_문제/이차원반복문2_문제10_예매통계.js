@@ -1,4 +1,3 @@
-<script>
 /*
 	    var seatList = [1003,1003,0,0,1002,0,1001];
 		var numList= [1001,1002,1003,1004];
@@ -16,4 +15,21 @@
 	var seatList = [1003,1003,0,0,1002,0,1001];
 	var numList = [1001,1002,1003,1004];
 	var countList = [];
-</script>
+
+	//countList 0으로 채우기
+	for(var i=0;i<numList.length;i++){
+		countList[i] = 0
+	}
+	console.log(countList)
+
+	//넘리스트의 요소가 하나가 좌석리스트의 전부를 돌아야함.
+
+	for(var i = 0;i<numList.length;i++){
+		for(j=0;j<seatList.length;j++){
+			if(numList[i]== seatList[j]){
+				countList[i] += 1
+			}
+		}
+	}
+	console.log(countList)
+	

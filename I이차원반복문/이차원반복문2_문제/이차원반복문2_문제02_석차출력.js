@@ -38,15 +38,3 @@
 	}
 	 
 	
-	
-	
-	//  var min =100
-
-	//  for(i=0;i<numList.length;i++){
-	// 	var j = numList.length-1
-	// 	if(min>scoreList[i]){
-	// 		scoreList[j] =scoreList[i]
-	// 		j --
-	// 	}
-	//  }
-	//  console.log(scoreList)

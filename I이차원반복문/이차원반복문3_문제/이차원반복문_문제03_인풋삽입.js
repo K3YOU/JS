@@ -1,4 +1,4 @@
-<script>
+
 /*
 	아래 indexList의 순서대로 valueList 값을 
 	arr 배열에 삽입하려고한다. 
@@ -22,4 +22,23 @@
 	var arr = [10,20,30,40,50];		
 	var indexList = [2,1,0,3];
 	var valueList = [60,70,80,90];
-</script>
+	console.log(arr);
+
+	for(var i = 0; i < indexList.length; i++){//0
+		index = indexList[i]; //2
+		back = arr.length - 1;
+		size = back - index;
+		console.log("index :",index ,"back :", back ,"size :", size);
+		
+		// 제일 뒤의 앞 자리 수부터 뒤로 옮겨야한다. 인덱스수부터 옮기면 인덱스 다음에 위치한 수를 옮길 때 다음에 위치한 수가 사라져버린다.
+		//인덱스수부터 옮기면 인덱스 다음에 위치한 수를 옮길 때 다음에 위치한 수가 사라져버린다.
+		for(var j = 0; j < size; j++){
+		arr[back] = arr[back-1];
+		back -= 1;}
+		arr[index] = valueList[i];
+
+
+
+		console.log(arr);
+	}
+	
