@@ -9,23 +9,20 @@
    
 */
 
-var ran = parseInt(Math.random()*99)+2
-console.log("random number :", ran)
-
-for (var i = 2; i<=ran; i++){
-    var count = 0
-    for (var j = 1; j<= i; j++){
-        if(i %j == 0){
-            count ++
-            }
- 
+var r = parseInt(Math.random()*99)+2
+console.log("random number is", r)
+for(i=2;i<= r;i++){ 
+    var c  = 0
+    for(var j = 1;j<=i;j++){
+        if(i % j == 0){
+            c += 1
         }
-    if (count == 2){
-            console.log(i)
-        }
+    }
+    if(c== 2){
+        console.log(i)
 
     }
-
+}
 
 
 

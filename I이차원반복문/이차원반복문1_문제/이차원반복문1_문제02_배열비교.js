@@ -12,38 +12,50 @@
 	var b = [10,5,20,9];
 	var c = [];
 	var ci = 0;
-	//var check = false
+
+	for(i=0;i<a.length;i++){
+		var count = 0   // 꼭 여기에 써줘야함
+	
+		for(j=0;j<b.length;j++){
+			if(a[i]!=b[j]){
+				count++
+			}else{
+				
+			}
+
+		}
+		
+		if(count ==b.length){ // 30이 b의 요소를 다 둘려봤을 때 없으면
+			c[ci] = a[i]
+			ci++
+		}
+	}
+console.log(c)
+
+
+
 
 	// for(i =0;i<a.length;i++){
 	// 	var check = false
 	// 	for(j=0;j<b.length;j++){
 	// 		if(a[i]==b[j]){
-	// 			check = true;
+	// 			check = true; // 있으면
 	// 		}
-	// 		if(check==false){
+	// 		/*생략
+	// 		if(a[i]!=b[j]){
+	// 			check = false; // 있으면
+	// 		}
+	// 	    */
+
+//			if(check==false){ //없으면
 	// 			c[ci] = a[i]
 	// 			ci += 1
 	// 		}
-	// 	}
 	// }
 	// console.log(c)
 
 
 
 
-	for(var i = 0; i < a.length; i++){
-		var check = false;
-		for(var j = 0; j < b.length; j++){
-			if(a[i] == b[j]){
-				check = true;
-		
-		}
-		if(check==false){
-			c[ci] = a[i];
-			ci += 1;
-		}
-	}
-}
-	console.log(c);
 
 

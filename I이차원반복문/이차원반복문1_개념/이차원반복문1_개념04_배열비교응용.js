@@ -13,14 +13,31 @@
 	var a = [10,20,30,40];
 	var b = [10,5,20,9];
 	var c = [];
-	var ci = 0; //c가 빈배열이니깐 변수를 하나 설정
-	for(var i = 0; i < a.length; i++){
-		for(var j = 0; j < b.length; j++){
-			if(a[i] == b[j]){
-				c[ci] = a[i];
-				ci += 1;
+	var ci = 0
+
+	for(i=0;i<a.length;i++){
+		for(j=0;j<b.length;j++){
+			if(a[i]==b[j]){
+				c[ci] =a[i]
+				ci ++
 			}
 		}
 	}
-	console.log(c);
+console.log(c)
+
+
+
+
+
+
+	// var ci = 0; //c가 빈배열이니깐 변수를 하나 설정
+	// for(var i = 0; i < a.length; i++){
+	// 	for(var j = 0; j < b.length; j++){
+	// 		if(a[i] == b[j]){
+	// 			c[ci] = a[i];
+	// 			ci += 1;
+	// 		}
+	// 	}
+	// }
+	// console.log(c);
 

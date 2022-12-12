@@ -17,28 +17,66 @@
 	//랜덤 출력
 
 	r = parseInt(Math.random()*2000)+1
-	console.log("r",r) 
+	console.log("r",r)
 
-	// var share = 1
-	// var count = 0
-
-	while(true){
-		r++ // 반복문 안에서 1씩 커지게 만들어야 한다.
-		share = 1 // 얘네들도 여기 안에 같이 적어줘야 한다. 안에서 도는 것이므로
-		count = 0
-
-		while(share<=r){
-
-			if(r % share == 0){
-				count++			
-			}	
-			share++
-		}
-		if (count == 2){
-				console.log("answer ;", r)
-				break
+	var check = true
+	var i = r+1
+    var i = 500
+	for(check=true;check==true;){ //
+		var c = 0
+		for(j=1;j<=i;j++){ // 나눌 수
+			if(i % j== 0 ){
+				c ++
 			}
-	}
+		}
+		if(c== 2){
+			console.log(i)
+			check = false
+		}
+		i ++
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// // var share = 1
+	// // var count = 0
+
+	// while(true){
+	// 	r++ // 반복문 안에서 1씩 커지게 만들어야 한다.
+	// 	share = 1 // 얘네들도 여기 안에 같이 적어줘야 한다. 안에서 도는 것이므로
+	// 	count = 0
+
+	// 	while(share<=r){
+
+	// 		if(r % share == 0){
+	// 			count++			
+	// 		}	
+	// 		share++
+	// 	}
+	// 	if (count == 2){
+	// 			console.log("answer ;", r)
+	// 			break
+	// 		}
+	// }
 	
 
 		// while (true){

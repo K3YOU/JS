@@ -16,6 +16,42 @@
 	 */
 
 	var arr = [10,50,30,40,80,19];
+	for(i=0;i<arr.length; i++){
+		// 인덱스랑 맥스 값 변수로 정하기
+		var index = i
+		var max = arr[i]
+		//큰 값을 앞으로 데려오기 : 처음부터 끝까지 다 훑어보고 공백 생길 수 있으므로, 0~1, 0~2까지 같이 하나씩 넓혀가기
+		for(j=i+1;j<arr.length;j++){
+			if(arr[j]>max){
+				max = arr[j]
+				index = j
+			}
+		}
+		// 값 바꾸기
+		var temp = arr[index]   //in here, index is j accordings to upper 
+		arr[index] = arr[i]
+		arr[i] = temp
+	}
+	console.log(arr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	for(var i = 0; i <  arr.length; i++){
 		var index = i;
 		var max = arr[i]; //10

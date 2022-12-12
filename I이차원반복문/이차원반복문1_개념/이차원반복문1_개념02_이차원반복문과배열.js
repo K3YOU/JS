@@ -5,14 +5,15 @@
 	 */
 
 
-	var arr = [];
-	var n = 0;
-	for(var i = 0; i < 3; i++){
-		for(var j = 0; j < 4; j++){
+	 var arr = [];
+	 var n = 0;
+	
+	for(var i = 0;i<3;i++){
+		for(var j = 0; j<4;j++){
 			console.log(i,j)
-			console.log(arr)
-			arr[n] = n + 1;
-			n += 1;
+			console.log(arr)  //여기까지는 빈 배열
+			arr[n] = n+1
+			n ++
 		}
 	}
-	console.log(arr);
+console.log(arr);
